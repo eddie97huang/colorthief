@@ -1,6 +1,7 @@
 /**
  * To use:
- * Change filePath in this file
+ * put all pictures in pics folder
+ * make sure you have nodejs installed: https://nodejs.org/en/download/
  * 
  * Run the following in console:
  * $ npm i --save colorthief
@@ -21,7 +22,7 @@ function rgbToHex(r, g, b) {
   return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
 }
 
-fs.readdirSync(filePath).forEach( file =>
+fs.readdir(filePath).forEach( file =>
     {
         ColorThief.getPalette(filePath + '/' + file, 10, 1)
             .then(palette => {
