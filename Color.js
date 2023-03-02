@@ -1,6 +1,6 @@
 /**
  * To use:
- * put all pictures in pics folder
+ * create a pics folder and put all pictures in pics folder
  * make sure you have nodejs installed: https://nodejs.org/en/download/
  * 
  * Run the following in console:
